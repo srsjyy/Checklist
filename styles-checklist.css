@@ -1,0 +1,198 @@
+/* Custom CSS for sidebar and main content */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+th,
+td {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    /* Adjusted font size */
+    text-align: center;
+    /* Align table data center */
+    vertical-align: middle;
+    /* Vertically center content */
+    white-space: normal;
+    /* Allow text wrapping */
+    padding: 0.5rem;
+    /* Increased padding for better spacing */
+}
+
+th {
+    background: linear-gradient(to bottom, #99ff99 0%, #99ff99 100%);
+}
+
+.year-section {
+    margin: 40px auto;
+    /* Adjust margins as needed */
+    max-width: 95%;
+    /* Adjust max-width as needed */
+    background: whitesmoke;
+    /* Set background color */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* Add shadow */
+    padding: 20px;
+    /* Add padding */
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+
+.header1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: center;
+    /* Center positioning */
+}
+
+.sidebar {
+    height: 100%;
+    width: 230px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #041701;
+    /* Dark background color */
+    padding-top: 60px;
+    /* Space for the title */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.sidebar-header {
+    font-family: 'Roboto' sans-serif;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    display: block;
+    transition: color 0.3s;
+    /* Smooth transition for color change */
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.sidebar a {
+    font-family: 'Roboto' sans-serif;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 15px;
+    color: gray;
+    display: block;
+    transition: color 0.3s;
+    /* Smooth transition for color change */
+    margin-left: 30px;
+}
+
+.sidebar a:hover,
+.sidebar a:focus {
+    color: #ffffff;
+    /* Change text color to white on hover or focus */
+}
+
+
+.main-content {
+    margin-left: 250px;
+    /* Same width as the sidebar */
+    padding: 20px;
+}
+
+/* Additional styling for the checklist title and search bar */
+.checklist {
+    margin-bottom: 20px;
+}
+
+.search-container {
+    margin-bottom: 20px;
+    width: calc(100% - 50px);
+    /* Subtracting padding from both sides */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.checklist h3 {
+    color: #333;
+    font-size: 55px;
+    /* Increased font size */
+    margin-left: 18px;
+    margin-bottom: 10px;
+    margin-top: 4%;
+    font-weight: bold;
+    /* Bold font weight */
+    text-align: center;
+}
+
+.level h3 {
+    color: #333;
+    font-size: 30px;
+    /* Increased font size */
+    margin-left: 25px;
+    margin-bottom: 5px;
+    margin-top: 4%;
+    font-weight: bold;
+    /* Bold font weight */
+    text-align: left;
+}
+
+.summary h3 {
+    color: #333;
+    font-size: 30px;
+    /* Increased font size */
+    margin-left: 25px;
+    margin-bottom: 5px;
+    margin-top: 4%;
+    font-weight: bold;
+    /* Bold font weight */
+    text-align: left;
+}
+
+.divider {
+    border: 1px solid black;
+    /* Solid black divider */
+    margin: 0 auto;
+    /* Center divider */
+    width: calc(100% - 60px);
+    /* Subtracting padding from both sides */
+    /* Set divider width */
+    margin-bottom: 5px;
+    /* Add some space below divider */
+}
+
+
+/* Media queries for responsive layout */
+@media (max-width: 768px) {
+
+    /* Adjust styles for smaller screens */
+    .sidebar {
+        display: none;
+        /* Hide the sidebar on smaller screens */
+    }
+
+    .main-content {
+        width: 100%;
+        /* Occupy full width on smaller screens */
+        margin-left: 0;
+        /* Remove left margin on smaller screens */
+    }
+
+    .year-section {
+        padding-left: 15px;
+        /* Add padding to the year sections on smaller screens */
+    }
+
+    .table-container {
+        overflow-x: auto;
+        /* Add horizontal scrolling for tables on smaller screens */
+    }
+}
